@@ -1,91 +1,39 @@
-<div align="center">
-  <h1 align="center">yourkeey</h1>
-  <p align="center">
-    <strong>Middle Full-Stack / Automation Developer</strong>
-  </p>
-  <p align="center">
-    Інженерія надійних Telegram-систем на <code>aiogram 3</code>, бекенд-CRM на <code>FastAPI</code> та надшвидкого e-commerce на <code>Astro</code>.
-  </p>
+# Yurii Fomenko
 
-  <p align="center">
-    <a href="https://yourkeey.github.io/">
-      <img src="https://img.shields.io/badge/⚡_Live_Portfolio-yourkeey.github.io-10B981?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Portfolio" />
-    </a>
-    <a href="https://yourkeey.github.io/cv.html">
-      <img src="https://img.shields.io/badge/📄_Online_CV-Резюме-06B6D4?style=for-the-badge&logoColor=white" alt="Online CV" />
-    </a>
-    <a href="https://t.me/yourkeey">
-      <img src="https://img.shields.io/badge/Telegram-@yourkeey-229ED9?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" />
-    </a>
-  </p>
+**Python Backend & AI Automation Developer**  
+*Ukraine (Remote) · [Portfolio & Demos](https://yourkeey.github.io/) · [Telegram](https://t.me/yourkeey) · [Email](mailto:sum4ik41@gmail.com)*
 
-  <p align="center">
-    <sub>🎓 <b>Магістр комп'ютерних наук</b> · Дослідження архітектури Telegram-ботів з часів дипломного проєкту</sub>
-  </p>
-</div>
+```text
+Backend:      Python (asyncio), FastAPI, Django, Pydantic v2, SQLAlchemy 2.0
+Data & Queue: PostgreSQL 16, Redis 7, Celery
+Integrations: aiogram 3 (Telegram Bot API & Mini Apps), Nova Poshta API, LLM APIs / Agents
+Infra & Ops:  Docker Compose, Linux VPS (Ubuntu, systemd, Caddy/Nginx), GitHub Actions CI/CD
+Quality:      pytest (fixtures and concurrency tests), Playwright, Sentry
+```
 
 ---
 
-### 🛠 Core Engineering Stack
+### Featured Projects
 
-<div align="center">
+#### 1. [TEA BET](https://yourkeey.github.io/) — Production Telegram Mini App E-Commerce Platform
+- Full-cycle Telegram shop with a shared bot/Mini App cart, HMAC-SHA256 `initData` auth, atomic PostgreSQL transactions, and idempotent checkout.
+- Celery background tasks, Nova Poshta shipping integration, structured JSON logging, Sentry error tracking, `pytest` coverage, and Docker rollback procedures.
+- **Stack:** `FastAPI` · `aiogram 3` · `PostgreSQL 16` · `Redis 7` · `Celery` · `Docker Compose` · `Sentry`
 
-| Сфера | Технології |
-| :--- | :--- |
-| **Backend & Bots** | `Python 3.12+` · `aiogram 3.x (FSM, Webhooks)` · `FastAPI` · `AsyncIO` · `Pydantic` |
-| **Databases** | `SQLite (WAL mode)` · субмілісекундна черга транзакцій |
-| **Frontend & Web** | `Astro (SSG, Islands Architecture)` · `Tailwind CSS` · `Vanilla Web APIs` |
-| **Quality & DevOps** | `pytest (803 smoke-тести, 0 failed)` · `Lighthouse 100/100` · `k6 load testing` · `Docker` |
-| **Workflow & SDD** | `Specification-Driven Development (SDD)` · `AI-assisted tooling (Claude Code, Codex)` |
+#### 2. Kinshore Bay — HoReCa Booking & Reception CRM
+- Hospitality reservation backend and reception dashboard with an interactive occupancy matrix, server-side rate validation, and strict guest check-in workflows.
+- PostgreSQL `SELECT FOR UPDATE` row-level locks protect reservation confirmations from concurrent writes. Parallel tests exercise the overbooking scenario across multiple database connections.
+- **Stack:** `Django` · `PostgreSQL 16` · `Docker Compose` · `pytest`
 
-</div>
-
----
-
-### 🚀 Production Cases
-
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h4>🍵 <a href="https://yourkeey.github.io/#interactive-stand">N1kotea</a></h4>
-      <p><b>Telegram Bot + Custom FastAPI CRM</b></p>
-      <ul>
-        <li>Повна автоматизація прийому та обробки замовлень через Telegram</li>
-        <li>Автоматична генерація ТТН через API Нової Пошти</li>
-        <li>Кастомна веб-панель керування замовленнями на FastAPI</li>
-        <li><b>803 smoke-тести (0 failed)</b> — висока відмовостійкість на SQLite WAL</li>
-      </ul>
-      <p>
-        <a href="https://yourkeey.github.io/#interactive-stand"><b>👉 Спробувати Interactive Digital Twin</b></a>
-      </p>
-    </td>
-    <td width="50%" valign="top">
-      <h4>🍯 <a href="https://zimin-apiary.com.ua">Пасіка Зіміних</a></h4>
-      <p><b>Astro SSG High-Speed Storefront</b></p>
-      <ul>
-        <li><b>100/100</b> Google Lighthouse Performance Score</li>
-        <li><b>Sub-50ms TTFB</b> — нульовий оверхед важких клієнтських JS-фреймворків</li>
-        <li>Нативний кошик на базі <code>&lt;dialog&gt;</code> API</li>
-        <li>Антиспам та надійний захист веб-форм через Honeypot</li>
-      </ul>
-      <p>
-        <a href="https://zimin-apiary.com.ua" target="_blank"><b>👉 Відкрити live-магазин</b></a>
-      </p>
-    </td>
-  </tr>
-</table>
+#### 3. [Workstation Telemetry & Power Outage Dashboard](https://yourkeey.github.io/redmi-4a-desk-dashboard/)
+- Always-on desk monitoring ecosystem integrating EcoFlow River 2 Pro telemetry, regional power outage schedules (Ukrainian grid), and LLM session rate-limit budgets.
+- Real-time battery depletion forecasting, automated power-cut countdowns, and dual-view live browser simulation (landscape smartphone dashboard + companion Telegram widget).
+- **Stack:** `Python 3` · `Docker Compose` · `PowerShell` · `JavaScript (Canvas)` · `REST APIs`
 
 ---
 
-### 📊 GitHub Activity & Metrics
+### Engineering Standards
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=yourkeey&show_icons=true&theme=tokyonight&hide_border=true&bg_color=080B10&title_color=10B981&text_color=94A3B8&icon_color=06B6D4" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=yourkeey&layout=compact&theme=tokyonight&hide_border=true&bg_color=080B10&title_color=10B981&text_color=94A3B8" alt="Top Languages" />
-</div>
-
----
-
-<div align="center">
-  <sub>Open for Remote Full-Time / Core Team contracts & Turnkey System Engineering · <a href="https://t.me/yourkeey">Зв'язатися в Telegram</a></sub>
-</div>
+- **Transactional Integrity:** Row-level locks (`SELECT FOR UPDATE`), atomic database transactions, and idempotency controls for concurrent writes.
+- **Test-Driven Reliability:** Extensive test coverage (unit, API integration, and concurrent race-condition scenarios) before deployment.
+- **Self-Healing Infrastructure:** Containerized deployments (Docker Compose), systemd service management, persistent volumes, and rollback procedures.
