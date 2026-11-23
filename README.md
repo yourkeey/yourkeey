@@ -1,4 +1,4 @@
-# Yurii Fomenko
+# Yurii F.
 
 **Python Backend Developer**
 
