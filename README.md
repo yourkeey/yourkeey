@@ -1,39 +1,37 @@
 # Yurii Fomenko
 
-**Python Backend & AI Automation Developer**  
-*Ukraine (Remote) · [Portfolio & Demos](https://yourkeey.github.io/) · [Telegram](https://t.me/yourkeey) · [Email](mailto:sum4ik41@gmail.com)*
+**Python Backend Developer**
 
-```text
-Backend:      Python (asyncio), FastAPI, Django, Pydantic v2, SQLAlchemy 2.0
-Data & Queue: PostgreSQL 16, Redis 7, Celery
-Integrations: aiogram 3 (Telegram Bot API & Mini Apps), Nova Poshta API, LLM APIs / Agents
-Infra & Ops:  Docker Compose, Linux VPS (Ubuntu, systemd, Caddy/Nginx), GitHub Actions CI/CD
-Quality:      pytest (fixtures and concurrency tests), Playwright, Sentry
-```
+Python backend developer with 1.5+ years of commercial experience building FastAPI APIs and asynchronous Telegram commerce workflows. I test concurrent checkouts and safe order retries, and prepare Docker releases with database backups and rollback scripts.
 
----
+Ukraine · Remote · [Portfolio](https://yourkeey.github.io/) · [CV](https://yourkeey.github.io/cv.html) · [Telegram](https://t.me/yourkeey)
 
-### Featured Projects
+## Featured projects
 
-#### 1. [TEA BET](https://yourkeey.github.io/) — Production Telegram Mini App E-Commerce Platform
-- Full-cycle Telegram shop with a shared bot/Mini App cart, HMAC-SHA256 `initData` auth, atomic PostgreSQL transactions, and idempotent checkout.
-- Celery background tasks, Nova Poshta shipping integration, structured JSON logging, Sentry error tracking, `pytest` coverage, and Docker rollback procedures.
-- **Stack:** `FastAPI` · `aiogram 3` · `PostgreSQL 16` · `Redis 7` · `Celery` · `Docker Compose` · `Sentry`
+### TEA BET · Production Telegram commerce platform
 
-#### 2. Kinshore Bay — HoReCa Booking & Reception CRM
-- Hospitality reservation backend and reception dashboard with an interactive occupancy matrix, server-side rate validation, and strict guest check-in workflows.
-- PostgreSQL `SELECT FOR UPDATE` row-level locks protect reservation confirmations from concurrent writes. Parallel tests exercise the overbooking scenario across multiple database connections.
-- **Stack:** `Django` · `PostgreSQL 16` · `Docker Compose` · `pytest`
+- Built a FastAPI backend for a Telegram shop with 500+ products, a shared bot and Mini App cart, and a web admin for orders and inventory.
+- Verified Telegram `initData` with HMAC-SHA256, migrated production from SQLite to PostgreSQL, checked inventory in atomic transactions, and used Redis idempotency keys to prevent duplicate orders.
+- Integrated Nova Poshta tracking for manually entered waybills and added customer delivery updates. Set up Sentry, structured logging, GitHub Actions checks, and Playwright scenarios.
 
-#### 3. [Workstation Telemetry & Power Outage Dashboard](https://yourkeey.github.io/redmi-4a-desk-dashboard/)
-- Always-on desk monitoring ecosystem integrating EcoFlow River 2 Pro telemetry, regional power outage schedules (Ukrainian grid), and LLM session rate-limit budgets.
-- Real-time battery depletion forecasting, automated power-cut countdowns, and dual-view live browser simulation (landscape smartphone dashboard + companion Telegram widget).
-- **Stack:** `Python 3` · `Docker Compose` · `PowerShell` · `JavaScript (Canvas)` · `REST APIs`
+[Project and browser demo](https://yourkeey.github.io/#tea-project) · [October 6 offline test report: 661 pytest tests and 1,116 smoke checks passed](https://yourkeey.github.io/verification.html)
 
----
+### Kinshore Bay · Booking and reception CRM
 
-### Engineering Standards
+- Built a Django and PostgreSQL hospitality reference implementation with a guest portal, reception calendar, server-side rate and availability checks, and reservation status history.
+- Used `SELECT FOR UPDATE` on the apartment row during confirmation. A pytest scenario using two PostgreSQL connections verifies that only one confirmation succeeds for the last available apartment.
 
-- **Transactional Integrity:** Row-level locks (`SELECT FOR UPDATE`), atomic database transactions, and idempotency controls for concurrent writes.
-- **Test-Driven Reliability:** Extensive test coverage (unit, API integration, and concurrent race-condition scenarios) before deployment.
-- **Self-Healing Infrastructure:** Containerized deployments (Docker Compose), systemd service management, persistent volumes, and rollback procedures.
+[Source](https://github.com/yourkeey/kinshore-bay) · [Live demo](https://kinshore-bay.scalo.biz/)
+
+### Zimin Apiary · Live client storefront
+
+Built an Astro and TypeScript store on Cloudflare Pages. The server-side checkout validates the cart, recalculates prices from the catalogue, and sends orders to the owner via Telegram.
+
+[Live store](https://zimin-apiary.com.ua/)
+
+## Additional engineering
+
+- **Internal B2B Lead Outreach Agent** · Built a Telegram tool for lead research and outreach drafting with Python and LLM APIs, deployed on an Ubuntu VPS with systemd.
+- **Redmi 4A Desk Dashboard** · Python service and browser dashboard for workstation telemetry, EcoFlow readings, and Ukrainian grid outage schedules. [Source](https://github.com/yourkeey/redmi-4a-desk-dashboard) · [Live simulation](https://yourkeey.github.io/redmi-4a-desk-dashboard/)
+
+**Core stack** · Python, FastAPI, Django, SQLAlchemy, PostgreSQL, Redis, pytest, Docker Compose
