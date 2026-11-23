@@ -38,13 +38,13 @@ Built a Telegram shop with 500+ products, a shared bot and Mini App cart, and a 
 
 [Project and browser demo](https://yourkeey.github.io/#tea-project) · [Offline test report: 661 pytest tests and 1,116 smoke checks passed](https://yourkeey.github.io/verification.html)
 
-### Kinshore Bay · Booking and reception CRM
+### 🏨 Kinshore Bay · Booking and reception CRM
 
 *Hospitality reference implementation · Django, PostgreSQL, Docker Compose, pytest*
 
 Built a guest portal and reception calendar with server-side rate and availability checks and reservation status history. The confirmation transaction locks the apartment row with `SELECT FOR UPDATE`. A test with two PostgreSQL connections checks that only one confirmation succeeds for the last available apartment.
 
-[Source](https://github.com/yourkeey/kinshore-bay) · [Live demo](https://kinshore-bay.scalo.biz/)
+[Source](https://github.com/yourkeey/kinshore-bay) · [Live demo](https://kinshore-bay.scalo.biz/) · [Concurrent booking test](https://github.com/yourkeey/kinshore-bay/blob/654edf10c7adc81c3e8c01b87304359588b10f87/crm/reception/test_desk.py#L82-L121)
 
 ### 🍯 Zimin Apiary · Online store
 
@@ -58,3 +58,5 @@ Built a storefront for a family apiary. The checkout validates the cart, recalcu
 
 - **Internal B2B Lead Outreach Agent** · Telegram tool for lead research and outreach drafting, built with Python and LLM APIs and deployed on Ubuntu with systemd.
 - **Redmi 4A Desk Dashboard** · I turned an old Android phone into a desk display for workstation telemetry, EcoFlow readings, and Ukrainian grid outages. [Source](https://github.com/yourkeey/redmi-4a-desk-dashboard) · [Live simulation](https://yourkeey.github.io/redmi-4a-desk-dashboard/)
+- **Telegram Dashboard Widget** · A compact view of outage schedules, EcoFlow battery status, and weather inside Telegram. [Integration](https://github.com/yourkeey/redmi-4a-desk-dashboard/blob/main/vps-bot-integration/README-widget.md) · [Standalone demo](https://yourkeey.github.io/redmi-4a-desk-dashboard/widget.html)
+- **EcoFlow Outage Widget for Windows** · A Windows 11 tray widget for EcoFlow RIVER 2 Pro readings, battery runtime estimates, and regional outage schedules. [Source](https://github.com/yourkeey/ecoflow-outage-widget) · [Browser demo](https://yourkeey.github.io/ecoflow-outage-widget/)
